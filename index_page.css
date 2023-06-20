@@ -1,0 +1,54 @@
+html {
+    background-color: #C9C9C9;
+    width: 100%;
+    padding-top: 25px;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial;
+    width: 90%;
+    margin: auto;
+}
+
+div.cover {
+    background: url(cover.jpg) no-repeat center/cover;
+    height:400px;
+}
+
+div.cover_text {
+    color: #08070D;
+    position: absolute;
+    left: 10%;
+    top: 5%;    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 48px;
+}
+
+div.cover_p {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    left: 15%;
+}
+
+p.in_cover {
+    font-size: 26px;
+}
+
+h2 {
+    color: #CF5432; 
+    text-align: center;
+
+}
+
+p.main_text {
+    color: black;
+}
+
+a {
+    color: #721921;
+}
