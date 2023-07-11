@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Arial;
+    line-height: 1.5;
 }
 
 div.cover {
@@ -87,7 +88,7 @@ a.contact-button:hover { /*Si la souris survole le lien*/
 div.section-grise1 {
     background: url(triangle2white.svg) no-repeat center bottom/100%;
     background-color: var(--colortextgrey);
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
 
 div.section-grise2 {
@@ -100,4 +101,22 @@ h2 {
     text-align: center;
     font-size: 34px;
     margin-top: 0px;
+}
+
+div.separateur {
+    background-color: var(--colorborder);
+    height: 1px;
+    width: 150px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+div.section-grise1 p {
+    font-size: 20px;
+    color: #5d2e3e;
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
