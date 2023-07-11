@@ -1,0 +1,103 @@
+:root { /*Définir des variables*/
+    --colorborder: #3d1a26;
+    --colortextgrey: #a19da530;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+div.cover {
+    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+
+img.cover-profile {
+    height: 120px;
+    /*Centrer l'image*/
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 40px;
+}
+
+h1 {
+    color: #2c236c;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+div.cover p {
+    color: #221e62;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+div.cover-contact {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: 4px solid var(--colorborder);
+    padding-left: 8px;
+}
+
+div.cover-contact p {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.cover-contact p:first-child { /*1er enfant <p>*/
+    margin-bottom: 14px;
+}
+
+div.cover-contact * {
+    color: #221e62;
+    font-size: 14px;
+}
+
+a.contact-button {
+    color: var(--colorborder);
+    border: 3px solid var(--colorborder);
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: #4f2d6b50;
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+a.contact-button:hover { /*Si la souris survole le lien*/
+    color: white;
+    border: 3px solid white;
+}
+
+.section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.section-grise1 {
+    background: url(triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--colortextgrey);
+    padding-bottom: 80px;
+}
+
+div.section-grise2 {
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--colortextgrey);
+    padding-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
