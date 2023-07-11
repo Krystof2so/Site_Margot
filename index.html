@@ -3,38 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index_page.css">
-    <title>ACCUEIL - Créa Margot</title>
+    <title>Margot Bertin</title>
+
+    <!STYLESHEET>
+    <style>
+        :root { /*Définir des variables*/
+            --colorborder: #3d1a26;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        div.cover {
+            background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+            height: 360px;
+            position: relative;
+        }
+
+        img.cover-profile {
+            height: 120px;
+            /*Centrer l'image*/
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 40px;
+        }
+
+        h1 {
+            color: #2c236c;
+            text-align: center;
+            font-size: 42px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        div.cover p {
+            color: #221e62;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        div.cover-contact {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            border-left: 4px solid var(--colorborder);
+            padding-left: 8px;
+        }
+
+        div.cover-contact p {
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        div.cover-contact p:first-child { /*1er enfant <p>*/
+            margin-bottom: 14px;
+        }
+
+        div.cover-contact * {
+            color: #221e62;
+            font-size: 14px;
+        }
+
+        a.contact-button {
+            color: var(--colorborder);
+            border: 3px solid var(--colorborder);
+            padding: 8px 20px;
+            text-decoration: none;
+            background-color: #4f2d6b50;
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        a.contact-button:hover { /*Si la souris survole le lien*/
+            color: white;
+            border: 3px solid white;
+        }
+
+    </style>
 </head>
 
 <body>
-
     <!--COVER-->
-
     <div class="cover">
-        <div class="cover_text">
-
-            <h1>Les "<i>Créa</i>" de Margot </h1>
-            <div class="cover_p">
-                <p class="in_cover">Margot BERTIN</p>
-                <p>Créatrice de contenu vidéo</p>
-                <div class="contact">
-                    <p>courriel: <a href="#">margotmail@truc.fr</a></p>
-                    <p>Tél: <a href="#">06.07.08.09.10</a></p>
-                </div>
-            </div>
+        <img class="cover-profile" src="profile.png"/>
+        <h1>Margot Bertin</h1>
+        <p>Créatrice audiovisuelle</p>
+        <div style="text-align: center;">
+            <a class="contact-button" href="mailto:margot.bertin.64@gmail.com?subject=Contact%20depuis%20le%20site...">ME CONTACTER</a>
         </div>
-                
+        <div class="cover-contact">
+            <p><a href="mailto:margot.bertin.64@gmail.com?subject=Contact%20depuis%20le%20site...">margot.bertin.64@gmail.com</a></p>
+            <p><a href="tel=+33612345678">06 12 34 56 78</a></p>
+        </div>
     </div>
-    <h2>Mon premier titre</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et risus in massa efficitur ullamcorper varius sit amet urna. 
-        Nullam pretium porta fermentum. Nulla sollicitudin volutpat tincidunt. Duis vestibulum, quam quis hendrerit cursus, justo orci 
-        malesuada risus, eget lacinia est leo vel ligula. Phasellus vitae tristique augue. Cras vestibulum semper egestas. Vivamus iaculis 
-        diam eget turpis venenatis, ut consectetur arcu ultricies. Donec dignissim tellus non nibh mattis, nec ornare nisi dictum.</p>
-
-    <p>Etiam feugiat, mi ac pulvinar lobortis, lectus enim tempus tortor, feugiat vestibulum libero ligula nec enim. Phasellus ultrices 
-        efficitur odio suscipit facilisis. Mauris a nibh hendrerit, mattis nibh vitae, pretium quam. In dignissim tempus justo id ultrices.
-         Nam in nisi malesuada, gravida sapien in, ornare odio. Nunc molestie sed velit ac facilisis. Aliquam malesuada metus eget nisl 
-         eleifend, eu pretium purus cursus. Integer efficitur metus sem, in feugiat tortor facilisis aliquam.</p>
+    
 </body>
 </html>
