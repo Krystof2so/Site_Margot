@@ -3,9 +3,9 @@
 }
 
 :root { /*Définir des variables*/
-    --colorborder: #3d7b7a;
-    --colortextgrey: #a19da530;
-    --colordore: #cba24d;
+    --colorborder: #2e425d;
+    --colortextgrey: #efe2da;
+    --colordore: #5f4c3f;
     --colorgreyblack: #474747;
 }
 
@@ -17,7 +17,7 @@ body {
 
 div.cover {
     background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
-    height: 360px;
+    height: 380px;
     position: relative;
 }
 
@@ -27,7 +27,7 @@ img.cover-profile {
     position: relative;
     left: 50%;
     margin-left: -50px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 h1 {
@@ -69,19 +69,21 @@ div.cover-contact * {
 }
 
 a.contact-button {
-    color: var(--colorborder);
-    border: 3px solid var(--colorborder);
+    color: var(--colorgreyblack);
+    border: 3px solid var(--colorgreyblack);
     padding: 8px 20px;
     text-decoration: none;
-    background-color: #4f2d6b50;
+    background-color: #aab2c8;
     display: inline-block;
     margin-top: 18px;
     font-size: 14px;
 }
 
 a.contact-button:hover { /*Si la souris survole le lien*/
-    color: white;
-    border: 3px solid white;
+    color: #17273e;
+    border: 5px solid #17273e;
+    font-weight: 900;
+
 }
 
 .section {
