@@ -7,6 +7,7 @@
     --colortextgrey: #efe2da;
     --colordore: #5f4c3f;
     --colorgreyblack: #474747;
+    --colorbackgroundframe: #fdf5f2;
 }
 
 body {
@@ -162,4 +163,18 @@ div.barre_verticale {
 
 .col-portfolio {
     width: 47%;
+}
+
+div.frame {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: var(--colorbackgroundframe);
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+p.frame-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
 }
