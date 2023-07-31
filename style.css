@@ -3,27 +3,29 @@
 }
 
 :root { /*Définir des variables*/
-    --colorborder: #2e425d;
-    --colortextgrey: #efe2da;
-    --colordore: #5f4c3f;
+    --colorborder: #b38a4d;
+    --colortextgrey: #0e1317;
+    --colordore: #e4ce9e;
     --colorgreyblack: #474747;
     --colorbackgroundframe: #fdf5f2;
-    --colorbackground2: #d9dae1;
+    --colorbackground2: #d1aa8a60;
     --colorbackgroundbutton: #aab2c8;
     --colorbuttonhover: #17273e;
+    --colorbody: #fbf8f5;
 }
 
 body {
+    background-color: var(--colorbody);
     margin: 0;
     font-family: Arial;
     line-height: 1.5;
 }
 
 div.cover {
-    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover2.jpeg) no-repeat center/cover;
     height: 380px;
     position: relative;
-    border-bottom: 2px var(--colorborder) solid;
+    border-bottom: 4px var(--colorborder) solid;
 }
 
 img.cover-profile {
@@ -44,7 +46,7 @@ h1 {
 }
 
 div.cover p {
-    color: var(--colorgreyblack);
+    color: var(--colorborder);
     text-align: center;
     margin-top: 5px;
     font-size: 14px;
@@ -69,13 +71,13 @@ div.cover-contact p:first-child { /*1er enfant <p>*/
 }
 
 div.cover-contact * {
-    color: var(--colorgreyblack);
+    color: var(--colordore);
     font-size: 14px;
 }
 
 a.contact-button {
-    color: var(--colorgreyblack);
-    border: 3px solid var(--colorgreyblack);
+    color: var(--colortextgrey);
+    border: 3px solid var(--colorborder);
     padding: 8px 20px;
     text-decoration: none;
     background-color: var(--colorbackgroundbutton);
@@ -86,7 +88,7 @@ a.contact-button {
 
 a.contact-button:hover { /*Si la souris survole le lien*/
     color: var(--colorbuttonhover);
-    border: 5px solid var(--colorbuttonhover);
+    border: 5px solid var(--colordore);
     font-weight: 900;
 
 }
@@ -129,7 +131,7 @@ div.separateur {
 
 div.section-grise1 p {
     font-size: 20px;
-    color: var(--colorborder);
+    color: var(--colortextgrey);
     text-align: center;
     max-width: 450px;
     margin-left: auto;
