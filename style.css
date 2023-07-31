@@ -22,7 +22,7 @@ body {
 }
 
 div.cover {
-    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover2.jpeg) no-repeat center/cover;
+    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpeg) no-repeat center/cover;
     height: 380px;
     position: relative;
     border-bottom: 4px var(--colorborder) solid;
