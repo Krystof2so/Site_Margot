@@ -8,6 +8,9 @@
     --colordore: #5f4c3f;
     --colorgreyblack: #474747;
     --colorbackgroundframe: #fdf5f2;
+    --colorbackground2: #d9dae1;
+    --colorbackgroundbutton: #aab2c8;
+    --colorbuttonhover: #17273e;
 }
 
 body {
@@ -40,7 +43,7 @@ h1 {
 }
 
 div.cover p {
-    color: #474747;
+    color: var(--colorgreyblack);
     text-align: center;
     margin-top: 5px;
     font-size: 14px;
@@ -74,15 +77,15 @@ a.contact-button {
     border: 3px solid var(--colorgreyblack);
     padding: 8px 20px;
     text-decoration: none;
-    background-color: #aab2c8;
+    background-color: var(--colorbackgroundbutton);
     display: inline-block;
     margin-top: 18px;
     font-size: 14px;
 }
 
 a.contact-button:hover { /*Si la souris survole le lien*/
-    color: #17273e;
-    border: 5px solid #17273e;
+    color: var(--colorbuttonhover);
+    border: 5px solid var(--colorbuttonhover);
     font-weight: 900;
 
 }
@@ -97,13 +100,13 @@ a.contact-button:hover { /*Si la souris survole le lien*/
 
 div.section-grise1 {
     background: url(triangle2white.svg) no-repeat center bottom/100%;
-    background-color: var(--colortextgrey);
+    background-color: var(--colorbackground2);
     padding-bottom: 90px;
 }
 
 div.section-grise2 {
     background: url(triangle1white.svg) no-repeat center top/100%;
-    background-color: var(--colortextgrey);
+    background-color: var(--colorbackground2);
     padding-top: 80px;
 }
 
@@ -168,8 +171,8 @@ div.barre_verticale {
 div.frame {
     margin: 30px 50px;
     padding: 20px 30px;
-    background-color: var(--colorbackgroundframe);
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(270deg, var(--colorbackground2), var(--colorbackgroundframe));
+    box-shadow: 0px 0px 10px 10px rgba(59, 66, 80, 0.2);
 }
 
 p.frame-title {
