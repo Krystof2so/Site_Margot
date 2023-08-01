@@ -3,11 +3,13 @@
 }
 
 :root { /*Définir des variables*/
+    --colorbody: #fafdf7;
     --colorbrown: #6d383a;
     --colorgrey: #343536;
     --colordore: #e7ba7a;
     --colorgreylight: #e8e3e7;
-    --colorbody: #fafdf7;
+    --colordorelight: #e7ba7a40;
+    --colorgreen: #1f5e2f;
 }
 
 body {
@@ -31,8 +33,8 @@ img.cover-profile {
     left: 50%;
     margin-left: -50px;
     margin-top: 60px;
-    border: 3px solid var(--colorbrown);
-    border-radius: 60px 60px 60px 60px;
+    border: 4px solid var(--colorbrown);
+    border-radius: 70px 70px 70px 70px;
 }
 
 h1 {
@@ -101,13 +103,13 @@ a.contact-button:hover { /*Si la souris survole le lien*/
 
 div.section-grise1 {
     background: url(triangle2white.svg) no-repeat center bottom/100%;
-    background-color: var(--colorgreylight);
+    background-color: var(--colordorelight);
     padding-bottom: 90px;
 }
 
 div.section-grise2 {
     background: url(triangle1white.svg) no-repeat center top/100%;
-    background-color: var(--colorgreylight);
+    background-color: var(--colordorelight);
     padding-top: 80px;
     border-bottom: 2px var(--colorborder) solid;
 }
@@ -161,7 +163,7 @@ div.texte-avec-ligne-verticale p {
 }
 
 div.barre_verticale {
-    height: 50px;
+    height: 60px;
     width: 4px;
     background-color: var(--colorbrown);
     margin-right: 8px;
@@ -184,4 +186,29 @@ p.frame-title {
     margin-top: 5px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.hyperlink-change {
+    background: linear-gradient(270deg, var(--colordore), var(--colorgreylight));
+    border-radius: 30px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: var(--colorgreen);
+    font-weight: bolder;
+    box-shadow: 4px 4px 8px grey;
+}
+
+.hyperlink-change:hover {
+    color: var(--colorgreen);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hyperlink-change:active {
+    color: var(--colorbrown);
+}
+
+.hyperlink-change:focus {
+    background-color: red;
 }
