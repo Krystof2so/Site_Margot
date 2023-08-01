@@ -3,15 +3,11 @@
 }
 
 :root { /*Définir des variables*/
-    --colorborder: #b38a4d;
-    --colortextgrey: #0e1317;
-    --colordore: #e4ce9e;
-    --colorgreyblack: #474747;
-    --colorbackgroundframe: #fdf5f2;
-    --colorbackground2: #d1aa8a60;
-    --colorbackgroundbutton: #aab2c8;
-    --colorbuttonhover: #17273e;
-    --colorbody: #fbf8f5;
+    --colorbrown: #6d383a;
+    --colorgrey: #343536;
+    --colordore: #e7ba7a;
+    --colorgreylight: #e8e3e7;
+    --colorbody: #fafdf7;
 }
 
 body {
@@ -25,7 +21,7 @@ div.cover {
     background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpeg) no-repeat center/cover;
     height: 380px;
     position: relative;
-    border-bottom: 4px var(--colorborder) solid;
+    border-bottom: 2px var(--colorgrey) solid;
 }
 
 img.cover-profile {
@@ -35,10 +31,12 @@ img.cover-profile {
     left: 50%;
     margin-left: -50px;
     margin-top: 60px;
+    border: 3px solid var(--colorbrown);
+    border-radius: 60px 60px 60px 60px;
 }
 
 h1 {
-    color: var(--colordore);
+    color: var(--colorbrown);
     text-align: center;
     font-size: 42px;
     margin-top: 10px;
@@ -46,7 +44,7 @@ h1 {
 }
 
 div.cover p {
-    color: var(--colorborder);
+    color: var(--colorgrey);
     text-align: center;
     margin-top: 5px;
     font-size: 14px;
@@ -56,7 +54,7 @@ div.cover-contact {
     position: absolute;
     top: 20px;
     left: 10px;
-    border-left: 4px solid var(--colorborder);
+    border-left: 4px solid var(--colorbrown);
     padding-left: 8px;
 }
 
@@ -71,24 +69,24 @@ div.cover-contact p:first-child { /*1er enfant <p>*/
 }
 
 div.cover-contact * {
-    color: var(--colordore);
+    color: var(--colorbrown);
     font-size: 14px;
 }
 
 a.contact-button {
-    color: var(--colortextgrey);
-    border: 3px solid var(--colorborder);
+    color: var(--colorbrown);
+    border: 3px solid var(--colorbrown);
     padding: 8px 20px;
     text-decoration: none;
-    background-color: var(--colorbackgroundbutton);
+    background-color: var(--colorgreylight);
     display: inline-block;
     margin-top: 18px;
     font-size: 14px;
 }
 
 a.contact-button:hover { /*Si la souris survole le lien*/
-    color: var(--colorbuttonhover);
-    border: 5px solid var(--colordore);
+    color: var(--colorgrey);
+    border: 5px solid var(--colorgrey);
     font-weight: 900;
 
 }
@@ -103,13 +101,13 @@ a.contact-button:hover { /*Si la souris survole le lien*/
 
 div.section-grise1 {
     background: url(triangle2white.svg) no-repeat center bottom/100%;
-    background-color: var(--colorbackground2);
+    background-color: var(--colorgreylight);
     padding-bottom: 90px;
 }
 
 div.section-grise2 {
     background: url(triangle1white.svg) no-repeat center top/100%;
-    background-color: var(--colorbackground2);
+    background-color: var(--colorgreylight);
     padding-top: 80px;
     border-bottom: 2px var(--colorborder) solid;
 }
@@ -118,10 +116,11 @@ h2 {
     text-align: center;
     font-size: 34px;
     margin-top: 0px;
+    color: var(--colorgrey);
 }
 
 div.separateur {
-    background-color: var(--colorborder);
+    background-color: var(--colorgrey);
     height: 1px;
     width: 150px;
     position: relative;
@@ -131,7 +130,7 @@ div.separateur {
 
 div.section-grise1 p {
     font-size: 20px;
-    color: var(--colortextgrey);
+    color: var(--colorgrey);
     text-align: center;
     max-width: 450px;
     margin-left: auto;
@@ -151,7 +150,7 @@ div.section-grise1 p {
 }
 
 div.texte-avec-ligne-verticale {
-    border-left: 4px solid var(--colorborder);
+    border-left: 4px solid var(--colorbrown);
     padding-left: 8px;
     height: 50px;
     display: inline-block;
@@ -164,7 +163,7 @@ div.texte-avec-ligne-verticale p {
 div.barre_verticale {
     height: 50px;
     width: 4px;
-    background-color: var(--colorborder);
+    background-color: var(--colorbrown);
     margin-right: 8px;
 }
 
@@ -175,8 +174,8 @@ div.barre_verticale {
 div.frame {
     margin: 30px 50px;
     padding: 20px 30px;
-    background: linear-gradient(270deg, var(--colorbackground2), var(--colorbackgroundframe));
-    box-shadow: 0px 0px 8px 8px rgba(95, 76, 63, 0.15);
+    background: linear-gradient(270deg, var(--colordore), var(--colorgreylight));
+    box-shadow: 10px 10px 8px 8px rgba(109, 56, 58, 0.5);
     border-radius: 10px 80px 0px 80px;
 }
 
