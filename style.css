@@ -9,6 +9,7 @@
     --colordore: #e7ba7a;
     --colorgreylight: #e8e3e7;
     --colordorelight: #e7ba7a40;
+    --colordorelight2: #ffebc2;
     --colorgreen: #1f5e2f;
 }
 
@@ -209,6 +210,42 @@ p.frame-title {
     color: var(--colorbrown);
 }
 
-.hyperlink-change:focus {
-    background-color: red;
+/* PORTFOLIO */
+div.portfolio-header {
+    height: 100px;
+    background: url(header.png) no-repeat center/cover;
+    position: relative;
+    border-bottom: 2px var(--colorgrey) solid;
+}
+
+.portfolio-header-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--colorbrown);
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+h1.portfolio {
+    color: var(--colorbrown);
+    font-size: 46px;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+h2.portfolio {
+    color: var(--colorgreen);
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+a.portfolio-back {
+    color: var(--colorgrey);
+    margin-left: 10px;
+}
+
+img.portfolio {
+    width: 70%;
+    max-width: 550px;
 }
